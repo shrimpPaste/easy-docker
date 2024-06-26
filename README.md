@@ -1,37 +1,42 @@
 # easy-docker
 
 #### 介绍
-制作开箱既用的dockerfile，简单易懂让你迅速上手并且掌握docker技术。
+市面上的教程大多告诉你一些简单的定义，例如docker run就可以开启一个容器，-v 就可以加上映射的关系，对于一个新手来说这是不友好的，
+名词太多看到最后就剩下**十万个为什么**。
+
+本项目会提供定制化的Dockerfile文件，让开发者不需要创建新的容器而消费心智，做到开箱即用才是我们的目的。同时，在后续会继续完成0基础
+该如何学习docker，甚至你可以在我的Dockerfile或者项目的Redeme中学习，我会尽力的把买个Dockerfile涉及的知识点都说出来且说明白，可以让你
+的学习路径不那么陡峭。
 
 #### 软件架构
-软件架构说明
+.
+├── LICENSE
+├── mysql
+│   ├── docker-compose.yml
+│   ├── Dockerfile
+│   ├── README.md
+│   └── script
+│       ├── create_table.sql
+│       └── setup.sh
+├── README.en.md
+├── README.md
+└── ubuntu_20_04_focal
+    ├── Dockerfile
+    └── README.md
 
+每个目录都是一个服务，我会在目录下把需要创建的目录，使用到的配置都写在里面。
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+开箱即用即是你拿到就可以使用，如果你需要使用mysql，你只需要吧Mysql目录复制一份到你的项目地址，进入到项目地址/mysql目录下运行docker-composer.yml，
+他会需要在目录下创建一个`data`目录，来持久化的存放数据，更详细的内容会在每个项目下的README.md文件中体现
 
 #### 参与贡献
 
 1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
+2.  新建 feature/你的名字-模块 分支
 3.  提交代码
 4.  新建 Pull Request
 
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)

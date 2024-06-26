@@ -1,0 +1,16 @@
+version: "3"
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: db
+    environment:
+      - MYSQL_DATABASE=kfr_flow_db
+      - MYSQL_USER=kungfu
+      - MYSQL_PASSWORD=kungfu123
+      - MYSQL_ROOT_PASSWORD=123
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./data:/var/lib/mysql"
